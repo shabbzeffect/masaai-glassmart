@@ -10,7 +10,7 @@ export const SITE = {
   heroHeadline: 'Glass, Hardware and Architectural Solutions Built Around Your Project.',
   description:
     'Masaai Glassmart supplies architectural glass, aluminium systems, hardware and fittings, with measurement, fabrication coordination and professional installation support for homes and commercial projects.',
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? '[SITE_URL]',
+  url: process.env.NEXT_PUBLIC_SITE_URL || '[SITE_URL]',
   locale: 'en',
   currency: process.env.NEXT_PUBLIC_CURRENCY ?? 'KES',
   contact: {

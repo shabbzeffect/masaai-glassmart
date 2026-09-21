@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { SITE } from '@/lib/site';
 
-const base = SITE.url.startsWith('[') ? 'https://masaai-glassmart.example.com' : SITE.url;
+const base = !SITE.url || SITE.url.startsWith('[') ? 'https://masaai-glassmart.example.com' : SITE.url;
 
 export function pageMetadata(opts: {
   title: string;
